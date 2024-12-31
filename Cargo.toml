@@ -1,0 +1,15 @@
+[package]
+name = "demo-rocket"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.8.5"
+rocket = "0.5.1"
+
+[features]
+default = ["project_a", "project_b", "project_c"] # by default all route are enabled
+except_project_b = ["project_a","project_c"]
+project_a = []                      # enable only project_a
+project_b = []                      # enable only project_b
+project_c = []                      # enable only project_c

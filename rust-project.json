@@ -1,0 +1,7 @@
+{
+    "rust-analyzer": {
+        "cargo": {
+            "features": ["projet_a", "projet_b", "projet_c"]
+        }
+    }
+}
